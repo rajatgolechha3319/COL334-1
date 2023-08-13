@@ -1,0 +1,150 @@
+traceroute to star-mini.c10r.facebook.com (157.240.16.35), 64 hops max, 52 byte packets
+ 1  10.184.0.13 (10.184.0.13)  3.899 ms  3.372 ms  2.938 ms
+ 2  10.254.175.5 (10.254.175.5)  3.463 ms
+    10.254.175.1 (10.254.175.1)  3.902 ms  3.846 ms
+ 3  10.255.1.34 (10.255.1.34)  3.383 ms  3.385 ms  3.661 ms
+ 4  10.119.233.65 (10.119.233.65)  3.900 ms  3.926 ms  3.829 ms
+ 5  * * *
+ 6  * * *
+ 7  10.1.200.137 (10.1.200.137)  28.756 ms  28.647 ms  28.651 ms
+ 8  * * *
+ 9  10.152.7.214 (10.152.7.214)  34.316 ms
+    10.152.7.38 (10.152.7.38)  34.295 ms  33.945 ms
+10  ae1.pr01.bom1.tfbnw.net (157.240.68.238)  28.566 ms
+    ae2.pr02.bom1.tfbnw.net (157.240.66.204)  60.870 ms
+    10.152.7.233 (10.152.7.233)  60.947 ms
+11  ae1.pr01.bom1.tfbnw.net (157.240.68.238)  29.104 ms  32.638 ms
+    po102.psw04.bom1.tfbnw.net (157.240.45.49)  60.842 ms
+12  po101.psw03.bom1.tfbnw.net (157.240.40.229)  33.234 ms  28.862 ms
+    173.252.67.15 (173.252.67.15)  37.623 ms
+13  edge-star-mini-shv-01-bom1.facebook.com (157.240.16.35)  38.590 ms
+    157.240.38.153 (157.240.38.153)  29.512 ms
+    173.252.67.111 (173.252.67.111)  33.539 ms
+
+
+
+// from sydney server looking glass 
+
+traceroute to www.facebook.com (31.13.73.35), 30 hops max, 60 byte packets
+ 1  te0-3-1-17.32.agr51.syd01.atlas.cogentco.com (206.149.255.1)  0.907 ms  0.960 ms
+ 2  be3578.ccr71.syd01.atlas.cogentco.com (154.54.47.17)  0.674 ms  0.728 ms
+ 3  be3585.ccr51.per01.atlas.cogentco.com (154.54.47.30)  45.818 ms  45.829 ms
+ 4  be2428.ccr31.sin01.atlas.cogentco.com (154.54.88.138)  92.047 ms  92.137 ms
+ 5  be2914.ccr31.mrs02.atlas.cogentco.com (154.54.87.210)  234.072 ms be2919.ccr32.mrs02.atlas.cogentco.com (154.54.87.214)  229.280 ms
+ 6  be2779.ccr41.par01.atlas.cogentco.com (154.54.72.109)  244.891 ms  244.829 ms
+ 7  be3685.ccr52.lhr01.atlas.cogentco.com (154.54.60.174)  249.024 ms  247.505 ms
+ 8  be2653.rcr21.dub01.atlas.cogentco.com (154.54.62.18)  258.559 ms  258.607 ms
+ 9  be2743.rcr21.dub02.atlas.cogentco.com (154.54.57.142)  262.788 ms  257.707 ms
+10  154.25.16.170 (154.25.16.170)  270.257 ms  263.124 ms
+11  149.14.148.218 (149.14.148.218)  280.785 ms 149.14.149.26 (149.14.149.26)  262.033 ms
+12  po204.asw04.dub4.tfbnw.net (129.134.50.162)  256.840 ms po204.asw02.dub4.tfbnw.net (129.134.71.212)  264.374 ms
+13  po212.psw01.dub4.tfbnw.net (129.134.71.231)  266.007 ms po242.psw04.dub4.tfbnw.net (129.134.101.1)  265.922 ms
+14  173.252.67.65 (173.252.67.65)  265.632 ms 157.240.38.67 (157.240.38.67)  258.737 ms
+15  edge-star-mini-shv-01-dub4.facebook.com (31.13.73.35)  256.679 ms  258.743 ms
+
+// from berlin server looking glass
+
+traceroute to www.facebook.com (157.240.221.35), 30 hops max, 60 byte packets
+ 1  gi0-0-0-0.3.nr11.b015735-0.ber01.atlas.cogentco.com (130.117.254.89)  0.824 ms  0.862 ms
+ 2  te0-0-0-35.rcr71.ber01.atlas.cogentco.com (154.25.14.9)  1.122 ms te0-0-0-16.rcr71.ber01.atlas.cogentco.com (154.25.14.5)  1.095 ms
+ 3  be3141.ccr41.ham01.atlas.cogentco.com (130.117.49.137)  4.216 ms  4.246 ms
+ 4  be2816.ccr42.ams03.atlas.cogentco.com (154.54.38.209)  53.464 ms be2815.ccr41.ams03.atlas.cogentco.com (154.54.38.205)  11.860 ms
+ 5  be12488.ccr42.lon13.atlas.cogentco.com (130.117.51.41)  18.601 ms  18.579 ms
+ 6  be2573.ccr21.lon02.atlas.cogentco.com (154.54.62.6)  18.796 ms be2382.rcr21.b015533-1.lon13.atlas.cogentco.com (154.54.61.162)  18.867 ms
+ 7  149.14.227.114 (149.14.227.114)  18.497 ms 149.14.227.122 (149.14.227.122)  18.573 ms
+ 8  po141.asw01.lhr3.tfbnw.net (129.134.45.56)  18.345 ms po131.asw02.lhr6.tfbnw.net (157.240.33.12)  18.957 ms
+ 9  po226.psw03.lhr8.tfbnw.net (129.134.42.19)  19.516 ms po219.psw04.lhr8.tfbnw.net (129.134.54.235)  19.081 ms
+10  157.240.38.145 (157.240.38.145)  18.445 ms 173.252.67.15 (173.252.67.15)  18.334 ms
+11  edge-star-mini-shv-01-lhr8.facebook.com (157.240.221.35)  19.405 ms  18.976 ms
+
+// from south america rio server
+
+1	107.246 ms	*	*	100ge0-34.core2.jax1.he.net (184.104.194.153)
+2	108.242 ms	108.870 ms	108.903 ms	port-channel1.core1.jax2.he.net (184.104.198.114)
+4	138.523 ms	138.936 ms	139.422 ms	rest-bb1-link.ip.twelve99.net (62.115.139.154)
+5	143.913 ms	144.780 ms	145.111 ms	nyk-bb1-link.ip.twelve99.net (62.115.141.245)
+6	197.622 ms	191.936 ms	191.965 ms	sjo-b23-link.ip.twelve99.net (62.115.137.169)
+7	194.254 ms	*	*	facebook-ic-337871.ip.twelve99-cust.net (62.115.36.57)
+8	189.728 ms	189.844 ms	189.456 ms	po141.asw01.sjc1.tfbnw.net (173.252.64.148)
+9	191.808 ms	192.603 ms	192.011 ms	psw01.sjc3.tfbnw.net (129.134.118.175)
+10	190.083 ms	190.330 ms	190.148 ms	157.240.38.103 (157.240.38.103)
+11	189.831 ms	190.032 ms	190.016 ms	edge-star-mini-shv-01-sjc3.facebook.com (157.240.22.35)
+
+// new york server
+
+
+1	21.171 ms	21.157 ms	22.632 ms	nyk-b8-link.ip.twelve99.net (213.248.76.13)
+2	23.615 ms	23.634 ms	23.723 ms	nyk-bb1-link.ip.twelve99.net (62.115.143.14)
+3	79.585 ms	79.605 ms	79.905 ms	sjo-b23-link.ip.twelve99.net (62.115.118.111)
+5	79.989 ms	80.070 ms	80.126 ms	po121.asw03.sjc1.tfbnw.net (157.240.46.106)
+6	81.337 ms	78.774 ms	78.911 ms	psw02.sjc3.tfbnw.net (157.240.57.229)
+7	79.124 ms	78.819 ms	78.810 ms	173.252.67.65 (173.252.67.65)
+8	79.049 ms	79.189 ms	79.385 ms	edge-star-mini-shv-01-sjc3.facebook.com (157.240.22.35)
+
+
+
+
+// reaching facebook servers across the world from canada
+
+Canada -> FB India server (157.240.16.35) 
+traceroute to 157.240.16.35 (157.240.16.35) from 216.234.191.172, 30 hops max, 40 byte packets
+ 1  cat6807-vlan2.edm.tera-byte.com (216.234.161.1)  0.274 ms
+ 2  *
+ 3  154.11.2.81 (154.11.2.81)  18.406 ms
+ 4  ae19.pr03.sea1.tfbnw.net (157.240.71.102)  19.062 ms
+ 5  po201.asw04.sea1.tfbnw.net (157.240.105.140)  19.418 ms
+ 6  ae102.ar01.sea1.tfbnw.net (157.240.103.172)  27.010 ms
+ 7  *
+ 8  *
+ 9  ae6.bb01.xsp1.tfbnw.net (129.134.96.91)  186.628 ms
+10  ae159.bb02.maa2.tfbnw.net (129.134.48.188)  275.999 ms
+11  ae155.bb01.pnq1.tfbnw.net (129.134.37.43)  235.772 ms
+12  ae156.bb02.bom1.tfbnw.net (129.134.37.19)  232.312 ms
+13  ae101.ar01.bom1.tfbnw.net (31.13.25.131)  224.192 ms
+14  ae140.pr04.bom1.tfbnw.net (157.240.53.27)  268.893 ms
+15  po103.psw01.bom1.tfbnw.net (157.240.52.211)  231.720 ms
+16  173.252.67.19 (173.252.67.19)  231.797 ms
+17  edge-star-mini-shv-01-bom1.facebook.com (157.240.16.35)  231.773 ms
+
+Canada -> FB England Server (31.13.73.35)
+traceroute to 31.13.73.35 (31.13.73.35) from 216.234.191.172, 30 hops max, 40 byte packets
+ 1  cat6807-vlan2.edm.tera-byte.com (216.234.161.1)  0.270 ms
+ 2  *
+ 3  rc2ar-be18-100.ed.shawcable.net (66.163.70.86)  1.436 ms
+ 4  rc2we-be7.ed.shawcable.net (66.163.70.129)  1.439 ms
+ 5  rc3no-be6.cg.shawcable.net (66.163.64.69)  5.201 ms
+ 6  rc2wt-be100.wa.shawcable.net (66.163.75.233)  20.731 ms
+ 7  rc1wt-be18-1.wa.shawcable.net (66.163.64.81)  20.754 ms
+ 8  sea-b1-link.ip.twelve99.net (213.248.67.224)  48.237 ms
+ 9  chi-b23-link.ip.twelve99.net (62.115.132.154)  48.666 ms
+10  chi-bb1-link.ip.twelve99.net (62.115.126.44)  48.608 ms
+11  nyk-bb2-link.ip.twelve99.net (62.115.118.150)  65.139 ms
+12  *
+13  dln-b3-link.ip.twelve99.net (62.115.120.11)  145.215 ms
+14  facebook-ic-338234.ip.twelve99-cust.net (213.248.84.186)  146.205 ms
+15  po203.asw04.dub4.tfbnw.net (129.134.41.194)  145.914 ms
+16  po243.psw04.dub4.tfbnw.net (129.134.72.37)  143.811 ms
+17  157.240.38.223 (157.240.38.223)  143.810 ms
+18  edge-star-mini-shv-01-dub4.facebook.com (31.13.73.35)  145.441 ms
+
+Canada -> Kenya Server
+traceroute to 102.132.96.0 (102.132.96.0) from 216.234.191.172, 30 hops max, 40 byte packets
+ 1  cat6807-vlan2.edm.tera-byte.com (216.234.161.1)  0.273 ms
+ 2  *
+ 3  154.11.2.81 (154.11.2.81)  18.401 ms
+ 4  ae19.pr03.sea1.tfbnw.net (157.240.71.102)  19.726 ms
+ 5  po201.asw02.sea1.tfbnw.net (157.240.105.124)  18.633 ms
+ 6  ae104.ar04.sea1.tfbnw.net (157.240.103.194)  25.278 ms
+ 7  ae15.bb04.sea1.tfbnw.net (157.240.40.156)  19.748 ms
+ 8  ae199.dr03.eag2.tfbnw.net (129.134.37.41)  51.349 ms
+ 9  ae118.bb04.den2.tfbnw.net (129.134.107.4)  56.372 ms
+10  ae127.bb01.stl1.tfbnw.net (129.134.96.59)  50.710 ms
+11  ae81.bb01.ord1.tfbnw.net (157.240.53.224)  50.407 ms
+12  ae71.bb02.cle2.tfbnw.net (129.134.45.236)  57.050 ms
+13  ae33.bb04.dca1.tfbnw.net (157.240.46.173)  67.224 ms
+14  ae40.bb02.lhr6.tfbnw.net (129.134.37.189)  137.800 ms
+15  ae123.bb02.bio1.tfbnw.net (129.134.40.16)  154.572 ms
+16  ae35.bb02.mrs1.tfbnw.net (129.134.44.3)  165.509 ms
+17  ae1.ar01.mba1.tfbnw.net (129.134.98.67)  294.873 ms
+18  ae110.pr01.mba1.tfbnw.net (129.134.49.179)  310.312 ms
+19  ae110.pr02.mba1.tfbnw.net (129.134.49.181)  332.368 ms !N
